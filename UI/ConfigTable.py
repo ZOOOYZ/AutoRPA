@@ -37,8 +37,6 @@ class Ui_Form(object):
         self.lineEdit = QtWidgets.QLineEdit(Form)
         self.lineEdit.setGeometry(QtCore.QRect(100, 20, 381, 20))
         self.lineEdit.setObjectName("lineEdit")
-        self.combo = QtWidgets.QComboBox(Form)
-        self.combo.setObjectName('combo')
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)

@@ -93,14 +93,14 @@ class ConfigTableWindow(QDialog):
         QMessageBox.information(self, '提示', '保存成功！')
 
     def Insert(self):
-        self.sm.appendRow([
-            QtGui.QStandardItem('无'),
+        self.sm.insertRow(self.tablewindow.tableView.currentIndex().row()+1,
+            [QtGui.QStandardItem('无'),
             QtGui.QStandardItem('无'),
             QtGui.QStandardItem('0')
         ])
         self.tablewindow.tableView.setModel(self.sm)
-        print("insert")
+        # print("insert")
 
     def Delete(self):
         self.sm.removeRow(self.tablewindow.tableView.currentIndex().row())
-        print("delete")
+        # print("delete")
